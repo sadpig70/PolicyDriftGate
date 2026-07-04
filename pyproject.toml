@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "policy-drift-gate"
+version = "1.0.0"
+description = "Verify behavior policy baseline drift and interrupt execution loops at runtime."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "Jung Wook Yang" }]
+keywords = ["audit", "policy", "drift", "gate", "ledger", "deterministic"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+policy-drift-gate = "PolicyDriftGate.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["PolicyDriftGate"]
