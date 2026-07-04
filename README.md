@@ -1,3 +1,5 @@
+![PolicyDriftGate](assets/PolicyDriftGate_hero.png)
+
 # PolicyDriftGate
 
 > Verify behavior policy baseline drift and interrupt execution loops at runtime.
